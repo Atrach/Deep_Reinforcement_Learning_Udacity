@@ -1,7 +1,7 @@
 # DeepRL-Navigation-Udacity-Project-1
 ## Project Name: Continuous Control
 
-### __The Enviroment__: "_Researcher_"
+### __The Enviroment__: "_Reacher_"
 
 
 _Trained DDPG multi agent in action._
