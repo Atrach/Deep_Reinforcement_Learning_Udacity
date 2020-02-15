@@ -2,7 +2,6 @@
 
 ## Implementation  
 
-## Learning algorithm and Neural Network Architectures
 
 ## Results
 
