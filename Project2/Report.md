@@ -10,17 +10,17 @@ Actor-critic algorithms are designed to tackle continuous time control problems,
 
 # Network
 
-|      THE ACTOR      |  
-|:-------------------:|
-|        States       |
-|      FC1 : 128      |
-|   ReLU Activation   |
-| Batch Normalization |
-|      FC2 : 128      |
-|   ReLU Activation   |
-| Batch Normalization |
-|      FC3 : 128      |
-|   tanh Activation   |
+
+|        THE ACTOR       |
+|:----------------------:|
+| States --> FC1 --> 128 |
+|     ReLU Activation    |
+|   Batch Normalization  |
+|   128 --> FC2 --> 128  |
+|     ReLU Activation    |
+|   Batch Normalization  |
+|    128 --> FC3 --> 4   |
+|     tanh Activation    |
 
 
 The plot below shows the agent performance over 400 episodes. The environment was solved after 269 episodes. 
