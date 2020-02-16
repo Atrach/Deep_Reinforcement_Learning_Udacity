@@ -4,9 +4,11 @@
 
 In this project the goal is to control multiple double-jointed arms which actions belong to the continuous time domain.  However, this task can be complex because actions can adopt any value from an infinite set and deep reinforcement algorithms such as DQN are not practical for this problem since actions would have to be discretized leading which is not practical and inefficient; therefore, another approach is needed for continuous control problems. 
 
-Actor-critic algorithms are designed to tackle continuous time control problems, they use a combination between policy-based and value-based methods. The policy-based method “The actor” directly maps the input states to the desire continuous time action commands, and the value-based method “The critic” calculates the value of that action.  The combination of these two methods leads to a high learning performance with low bias and variance. In this project, Deep Deterministic Policy Gradient DDPG was the actor-critic algorithm used to solve the environment. 
+Actor-critic algorithms are designed to tackle continuous time control problems, they use a combination of policy-based and value-based methods. The policy-based method “The actor” directly maps the input states to the desire continuous time action commands, and the value-based method “The critic” calculates the value of that action.  The combination of these two methods leads to a high learning performance with low bias and variance. In this project, Deep Deterministic Policy Gradient DDPG was the actor-critic algorithm used to solve the environment. 
 
 ## Results
+
+The network architecture and hyperparameters used can be found below. Notice the actor-network present batch normalization in a couple of layers in order to prevent gradient exploding which leads to more stable learning. Furthermore, the algorithm collects experiences at every time step, but it waits for every 20 time steps to perform multiple learning passes.
 
 ### Network Architecture
 
@@ -44,4 +46,4 @@ The plot below shows the agent performance over 400 episodes. The environment wa
 
 ## Future work
 
-In the presented algorithm actions were mixed with noise in a process called Ornstein-Uhlenbeck in order to improve exploration. However, it is been proved that adding noise to the parameters space instead of the action space can greatly contribute to better exploration and thus obtaining higher scores faster. Furthermore, exploring other algorithms such as the Distributed Distributional Deterministic Policy Gradients (D4PG), or Trust Region Policy Optimization (TRPO) may perform better for the presented environment.
+In the presented algorithm actions were mixed with noise in a process called Ornstein-Uhlenbeck in order to improve exploration. However, it is been proved that adding noise to the parameter space instead of the action space can greatly contribute to the better exploration and thus obtaining higher scores faster. Furthermore, exploring other algorithms such as the Distributed Distributional Deterministic Policy Gradients (D4PG), or Trust Region Policy Optimization (TRPO) may perform better for the presented environment.
