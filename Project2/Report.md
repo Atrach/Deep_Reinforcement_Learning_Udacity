@@ -8,7 +8,7 @@ Actor-critic algorithms are designed to tackle continuous time control problems,
 
 ## Results
 
-### Network
+### Network Architecture
 
 
 |        THE ACTOR       |            THE CRITIC           |
