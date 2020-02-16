@@ -2,6 +2,8 @@
 
 ## Implementation  
 
+In this project the goal is to control multiple double-jointed arms which actions belong to the continuous time domain.  However, this task can be complex because actions can adopt any value from an infinite set and deep reinforcement algorithms such as DQN are not practical for this problem since actions would have to be discretized leading which is not practical and inefficient; therefore, another approach is needed for continuous control problems. 
+Actor-critic algorithms are designed to tackle continuous time control problems, they use a combination between policy-based and value-based methods. The policy-based method “The actor” directly maps the input states to the desire continuous time action commands, and the value-based method “The critic” calculates the value of that action.  The combination of these two methods leads to a high learning performance with low bias and variance. In this project, Deep Deterministic Policy Gradient DDPG was the actor-critic algorithm used to solve the environment. 
 
 ## Results
 
