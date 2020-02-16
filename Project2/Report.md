@@ -8,6 +8,22 @@ Actor-critic algorithms are designed to tackle continuous time control problems,
 
 ## Results
 
+# Network
+
+The Actor
+
+|        States       |
+|:-------------------:|
+|      FC1 : 128      |
+|   ReLU Activation   |
+| Batch Normalization |
+|      FC2 : 128      |
+|   ReLU Activation   |
+| Batch Normalization |
+|      FC3 : 128      |
+|   tanh Activation   |
+
+
 The plot below shows the agent performance over 400 episodes. The environment was solved after 269 episodes. 
 
 ![Solution 1](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project2/DDPG/ddpg_score.png)
