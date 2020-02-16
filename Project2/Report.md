@@ -11,15 +11,15 @@ Actor-critic algorithms are designed to tackle continuous time control problems,
 # Network
 
 
-|        THE ACTOR       |
-|:----------------------:|
-| States --> FC1 --> 128 |
-|     ReLU Activation    |
-|   Batch Normalization  |
-|   128 --> FC2 --> 128  |
-|     ReLU Activation    |
-|   Batch Normalization  |
-|    128 --> FC3 --> 4   |
+|        THE ACTOR       |            THE CRITIC           |
+|:----------------------:|:-------------------------------:|
+| States --> FC1 --> 128 |     States --> FCS1 --> 256     |
+|     ReLU Activation    |      Leaky ReLU Activation      |
+|   Batch Normalization  | 256 + 4 actions --> FC2 --> 128 |
+|   128 --> FC2 --> 128  |      Leaky ReLU Activation      |
+|     ReLU Activation    |       128 --> FC3 --> 128       |
+|   Batch Normalization  |      Leaky ReLU Activation      |
+|    128 --> FC3 --> 4   |        128 --> FC3 --> 1        |
 |     tanh Activation    |
 
 
