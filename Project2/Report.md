@@ -10,7 +10,7 @@ Actor-critic algorithms are designed to tackle continuous time control problems,
 
 # Network
 
-|      THE ACTOR      |  |  THE CRITIC  |
+|      THE ACTOR      |  
 |:-------------------:|
 |        States       |
 |      FC1 : 128      |
