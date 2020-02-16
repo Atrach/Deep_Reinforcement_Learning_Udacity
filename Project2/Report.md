@@ -23,6 +23,19 @@ Actor-critic algorithms are designed to tackle continuous time control problems,
 |     tanh Activation    |
 
 
+### Hyperparameters
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-4         # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0        # L2 weight decay
+LEARN_PASSES = 10       # number of learning passses
+LEARN_EVERY = 20        # learn every N time steps
+
+
 The plot below shows the agent performance over 400 episodes. The environment was solved after 269 episodes. 
 
 ![Solution 1](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project2/DDPG/ddpg_score.png)
