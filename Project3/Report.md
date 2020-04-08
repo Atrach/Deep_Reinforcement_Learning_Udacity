@@ -41,7 +41,7 @@
 
 The plot below shows the agents' performance over 1000 episodes. The environment was solved after 678 episodes and the agents maintain increasing its maximum score even after 300 episodes later.
 
-![Solution 1](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project3/MADDPG/maddpg_score.png)
+![Solution 1](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project3/MADDPG/maddpg_scores.png)
 
 ## Conclusions and Future work
 
