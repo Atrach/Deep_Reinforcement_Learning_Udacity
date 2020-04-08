@@ -39,7 +39,7 @@
 | EPSILON_FINAL  | 0.2       |       final value for the epsilon noise decay       |
 
 
-The plot below shows the agents performance over 1000 episodes. The environment was solved after 678 episodes and the agents mantain increasing its maximun score even after 300 episodes later. 
+The plot below shows the agents' performance over 1000 episodes. The environment was solved after 678 episodes and the agents maintain increasing its maximum score even after 300 episodes later.
 
 ![Solution 1](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project3/MADDPG/maddpg_score.png)
 
