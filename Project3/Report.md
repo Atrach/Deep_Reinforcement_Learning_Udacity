@@ -4,11 +4,9 @@
 
 The objective of this project is to train a pair of Reinforcement learning agents to play a simplified version of a tennis game. As in regular tennis, players or in this case the virtual agents need to keep the ball in play to increase their own rewards. Agents learn that if the ball falls or if it goes outside of the court they lose points. This environment fell into the category of a competitive environment where each agent is focused on its own rewards and to learn its own independent policy. 
 
-## Implementation 
+## Implementation [MADDPG](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf)
 
-maddpg 
-
-
+In the presented environment, the action space of each agent fell within the continuous-time domain; therefore, as in the previous continuous control project, an actor-critic algorithm can be used to compute the actions. A Deep Deterministic Policy Gradient (DDPG) is implemented for this task. Furthermore, the algorithm can be extended to be used to train multiple agents as shown by [Lowe et al.](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf). This presented algorithm or Multi-Agent Deep Deterministic Policy Gradient (MADDPG) can be used so each agent can learn its own policy and take its own actions in order to maximize theirs owns rewards. However, both agents learn from a buffer with shared experiences that contain states, actions, and rewards. 
 
 ## Results
 
