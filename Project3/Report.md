@@ -1,10 +1,18 @@
 # Udacity Deep Reinforcement Learning Nanodegree - Project 3: Collaboration and Competition
 
-## Implementation  
+## Project Objetive
+
+The objective of this project is to train a pair of Reinforcement learning agents to play a simplified version of a tennis game. As in regular tennis, players or in this case the virtual agents need to keep the ball in play to increase their own rewards. Agents learn that if the ball falls or if it goes outside of the court they lose points. This environment fell into the category of a competitive environment where each agent is focused on its own rewards and to learn its own independent policy. 
+
+## Implementation 
+
+maddpg 
+
 
 
 ## Results
 
+The actor-critic network architecture and hyperparameters can be found in the tables below. It can be appreciated that batch normalization was implemented in both networks in order to improve stability and prevent exploding gradients. In each episode each agent can learn up to four times, this can be seen in the 'LEARN_PASSES' hyperparameter. Finally, an adaptive parameter called epsilon is implemented to decay the noise provided by the Ornstein-Uhlenbeck process in the action space with the purpose of getting a better exploration-exploitation approach. Early episodes get a higher amount of noise which improves exploration, but as the agents learn, this noise decreases which leads to better exploitation of the rewards. 
 
 ### Network Architecture
 
