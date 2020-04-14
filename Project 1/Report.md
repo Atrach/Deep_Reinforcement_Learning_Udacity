@@ -16,7 +16,7 @@ Deep Q-Networks are used as function approximation in order to map any state giv
 
 The target DQN can be calculated as:
 
-![DQN target](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/formula/DDQN.jpg)
+![DQN target](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/formula/DQN.jpg)
 
 
 ### Double Deep Q-Networks  [(DDQN)](https://arxiv.org/pdf/1509.06461.pdf)
@@ -25,17 +25,17 @@ The DDQN is a variation of the regular DQN that intends to solve the issue of ge
 
  The target of the double DQN can be calculated as:
  
-![DDQN target](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/formula/DQN.jpg)
+![DDQN target](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/formula/DDQN.jpg)
 
 
 ### Dueling Deep Q-Networks [(Dueling DQN)](https://arxiv.org/abs/1511.06581)
 Dueling Deep Q-Networks are used because sometimes the values of the states do not considerably change among the actions; thus, it is better to calculate them separately, and the benefit that individual actions have in each state. Furthermore, they get their name because the main network with parameters θ  bifurcates into two branches, one is for calculating the advantage function A(s) with parameters α, and the second branch is to calculate the state value function V(s) with parameters named β. Using the equation shown below, these two functions can be joined to form the Q values. 
 
-![Dueling Q value](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/formula/Duel_Q_value.jpg)
+![Dueling Q value](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/formula/Duel_Q_value.jpg)
 
 Finally, using this architecture is beneficial to provide a better policy evaluation when similar value actions appear.   
 
-![Dueling DQN network](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/formula/Duel_DQN.png)
+![Dueling DQN network](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/formula/Duel_DQN.png)
 
   Dueling architecture diagram.
 
@@ -58,7 +58,7 @@ final epsilon = 0.01
 | Dueling DDQN | 409 | 1000/16.62 |  
 
 
-![Solution 1](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/solution1.png)
+![Solution 1](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/solution1.png)
 
 __Solution 2__ 
 
@@ -74,7 +74,7 @@ final epsilon = 0.01
 | Dueling | 277 | 900/16.68 |
 
 
-![Solution 2](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/solution2.png)
+![Solution 2](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/solution2.png)
 
 __Solution 3__
 
@@ -90,7 +90,7 @@ final epsilon = 0.02
 | Dueling DDQN | 751 | 1000/15.94 |
 
 
-![Solution 3](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Solutions/solution3.png)
+![Solution 3](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Solutions/solution3.png)
 
 ## Future work ##  
   
