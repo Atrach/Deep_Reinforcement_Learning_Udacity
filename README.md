@@ -2,7 +2,7 @@
 
  _Trained Dueling DDQN agent in action._ (Project 1)
   
-![Dueling DDQN Agent](https://github.com/Atrach/DeepRL-Navigation-Udacity-Project-1/blob/master/Agent_Duel_DDQN.gif)
+![Dueling DDQN Agent](https://github.com/Atrach/Deep_Reinforcement_Learning_Udacity/blob/master/Project%201/Agent_Duel_DDQN.gif)
 
 _Trained DDPG multi agent in action._ (Project 2)
   
